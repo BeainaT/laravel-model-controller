@@ -7,10 +7,10 @@
     <title>Movies DB - Laravel MVC</title>
 </head>
 <body>
-    @foreach ($movies as $movie)
-        <h3>Title: {{$movie->title}} - {{$movie->original_title}}</h3>
-        <h5>Nationality: {{$movie->nationality}}</h5>
-        <h4>Vote: {{$movie->vote}}</h4>
-    @endforeach
+    <ul>
+        @foreach ($movies as $movie)
+            <li><a href="{{route('movie', $movie->id)}}"><h3>Title: {{$movie->title}}</h3></a></li>
+        @endforeach
+    </ul>
 </body>
 </html>
