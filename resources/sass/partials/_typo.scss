@@ -1,0 +1,28 @@
+body {
+    background-color: var(--bg_color);
+    font-family: sans-serif;
+}
+header {
+    padding: var(--m);
+    a,
+    h1 {
+        color: var(--link_home);
+        font-weight: bold;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+ul li {
+    list-style: none;
+    padding: var(--m) 0;
+    color: var(--link_color);
+}
+a {
+    color: var(--link_color);
+    text-decoration: none;
+}
+a,
+h1 {
+    text-transform: uppercase;
+}

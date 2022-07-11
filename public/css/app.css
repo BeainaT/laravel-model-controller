@@ -1,0 +1,58 @@
+:root {
+  --bg_color: rgb(56, 52, 52);
+  --link_color: rgb(207, 204, 204);
+  --link_home: rgb(255, 174, 0);
+  /*spaces*/
+  --s: .625rem;
+  --m: 1.25rem;
+  --lg: 3.125rem;
+  /*containers*/
+  --container_sd: 75rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg_color);
+  font-family: sans-serif;
+}
+
+header {
+  padding: var(--m);
+}
+
+header a,
+header h1 {
+  color: var(--link_home);
+  font-weight: bold;
+}
+
+header h1 {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  padding: var(--m) 0;
+  color: var(--link_color);
+}
+
+a {
+  color: var(--link_color);
+  text-decoration: none;
+}
+
+a,
+h1 {
+  text-transform: uppercase;
+}
+
+.container_sd {
+  width: var(--container_sd);
+  margin: auto;
+}
+
